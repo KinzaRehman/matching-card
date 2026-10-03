@@ -6,15 +6,23 @@
   		<meta name="keywords" content="one, two, three">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<title>Template</title>
+		<title>Memory Card Game</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<h1> HELLO WORLD </h1>
+		<h1> Card Game </h1>
+		<p> Test your memory by flipping the cards </p>
+		<button id="start"> Start Game </button>
 
-		<script type="text/javascript" src="js/main.js"></script>
+		<div id="cards">
+			<!-- cards have to be more than 10, match case 2 at a time -->
+		</div>
+
+		<div id="score">Score: <span id="initialScore">0</span></div>
+		<div id="winMessage"></div>
+		<script src="js/script.js"></script>
 	</body>
 </html>

@@ -16,13 +16,44 @@
 .clear {
 	clear: both;
 }
+/* main colors in a cards game  red uits hearts diamonds, black suits spades clubs  */ 
 
+:root {
+  --primary: black;
+  --secondary: white;
+  --tertiary: #d12d36; 
+  --quaternary: #CF1827;
+  --card-width: 5em;
+  --card-height: calc(var(--card-width) * 1.4);
+
+
+}
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
 body {
+  background: var(--secondary);
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px; 
 
+}
+.card {
+  width: var(--card-width);
+  height: var(--card-height);
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  border-radius: 0.25em;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  font-family: sans-serif;
+  user-select: none;
 }
 
 /******************************************
