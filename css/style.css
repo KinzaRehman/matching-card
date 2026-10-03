@@ -50,6 +50,10 @@ h1, p{
     cursor: pointer;
 }
 
+#start.playing {
+  background-color: var(--green);
+}
+
 
 #cards {
     display: grid;

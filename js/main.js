@@ -42,7 +42,11 @@ let score = 0;
 // game start button on click event
 document.getElementById("start").addEventListener("click", function () {
 
-    const gameboard = document.getElementById("cards"); //reset the inner html for the cards so we can remove the presets 
+
+    document.getElementById("start").classList.add("playing") 
+    
+    const gameboard = document.getElementById("cards"); 
+    //reset the inner html for the cards so we can remove the presets 
     gameboard.innerHTML = "";
 
     firstCard = null;
